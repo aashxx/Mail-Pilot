@@ -1,4 +1,5 @@
 # Mail Pilot
+- This project was developed during an internship.
 - MailPilot is a tool to send bulk or mass emails in a single click.<br>
 - It can also filter out all the valid and invalid emails from the uploaded csv file.<br>
 - The SMTP server is hosted by an email API called SMTP JS<br>
