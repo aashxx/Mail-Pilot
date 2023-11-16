@@ -6,13 +6,11 @@ import Mail from "./components/Mail";
 import Steps from "./components/Steps";
 
 function App() {
-  const secureToken = process.env.REACT_APP_SECURE_TOKEN;
-
   return (
     <>
     <Navbar />
     <Home />
-    <Mail secureToken={secureToken} sender="tmohamedaashir@gmail.com"/>
+    <Mail/>
     <Steps />
     <Footer />
     </>
