@@ -37,26 +37,26 @@ export default function Select(props) {
         return e.split(",");
       });
       arr.forEach((e) => {
-        let em = String(e);
+        let emailId = String(e);
         let m = e.map((e) => {
           return `<td>${e}</td>`;
         });
         let creEle = document.createElement("tr");
         creEle.innerHTML = m;
-        if (em !== "") {
-          if (em.charAt(em.length - 4) === ".") {
+        if (emailId !== "") {
+          if (emailId.charAt(emailId.length - 4) === ".") {
             document.querySelector("table#val").appendChild(creEle);
-            Window.valMail.push(em);
+            Window.valMail.push(emailId);
             Window.valNo = Window.valNo + 1;
             return false;
-          } else if (em.charAt(em.length - 3) === ".") {
+          } else if (emailId.charAt(emailId.length - 3) === ".") {
             document.querySelector("table#val").appendChild(creEle);
-            Window.valMail.push(em);
+            Window.valMail.push(emailId);
             Window.valNo = Window.valNo + 1;
             return false;
-          } else if (em.charAt(em.length - 10) === ".") {
+          } else if (emailId.charAt(emailId.length - 10) === ".") {
             document.querySelector("table#val").appendChild(creEle);
-            Window.valMail.push(em);
+            Window.valMail.push(emailId);
             Window.valNo = Window.valNo + 1;
             return false;
           } else {
